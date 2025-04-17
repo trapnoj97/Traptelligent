@@ -1,0 +1,32 @@
+{Monitoring the usage of your GitHub tokens is an essential part of maintaining security. Here’s how you can keep track of where and how your tokens are being used:
+1. Enable GitHub Security Features:
+    * GitHub provides built-in security features that allow you to review the usage of your personal access tokens. Make sure these features are enabled by checking your GitHub account security settings.
+2. Review Token Access Logs:
+    * GitHub provides a security log where you can view activities related to your account, including token usage.
+    * To access the security log:
+        * Click on your profile picture in the upper right corner and select Settings.
+        * In the left sidebar, click on Security log.
+        * Look for entries related to token usage, such as API access and authentication events.
+3. Use GitHub Audit Logs (for Organizations):
+    * If you are an organization owner, you can gain insights into token usage through audit logs, which provide detailed information about access and activities.
+    * To access audit logs:
+        * Go to your organization's main page.
+        *         * Click on Settings.
+        * Select Audit log from the left sidebar.
+        * Filter logs to find events related to personal access tokens.
+4. Implement API Rate Limiting:
+    * If you have a self-hosted service interacting with GitHub, implement rate limiting to monitor and control the number of API requests made using the token.
+    * Look for anomalies in API request rates, which can indicate misuse or unauthorized access.
+5. Integrate with Monitoring Tools:
+    * Use monitoring tools like Datadog, Splunk, or AWS CloudWatch to track token usage by logging API requests or webhook events.
+    * Set up alerts for unusual activities, such as spikes in API usage.
+6. Enable Two-Factor Authentication (2FA):
+    * Though not directly related to token monitoring, enabling 2FA adds an additional layer of security that helps protect your account and makes it harder for malicious actors to misuse tokens.
+7. Regularly Review and Rotate Tokens:
+    * Regularly review your active tokens and ensure they are still needed.
+    * Rotate tokens periodically to limit the potential impact of a compromised token.
+
+By following these steps, you can effectively monitor the usage of your GitHub tokens and ensure the security of your account and data.
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {}
+}
